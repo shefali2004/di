@@ -1,0 +1,48 @@
+
+body {
+    background-image: url("cricket.jpg");
+    background-size: contain; /* This ensures the image covers the entire viewport */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+.button-container {
+    position: absolute;
+    bottom: 43px; /* Position button at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 22px 86px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    
+}
+.whatsapp-button{
+
+         background-color: #1ebe57;
+}
+.hand {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    bottom: -40px; /* Adjust position to make it higher */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: point 1s infinite alternate;
+}
+@keyframes point {
+    0% { transform: translateX(-50%) translateY(0); }
+    100% { transform: translateX(-50%) translateY(10px); }
+}
